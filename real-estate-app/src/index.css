@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Hiragino Kaku Gothic ProN', 'Yu Gothic', system-ui, sans-serif;
+  background-color: #f4f5f7;
+  color: #1f2933;
+}
+
+/* ログイン・会員登録画面 */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 360px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form h1 {
+  margin: 0 0 24px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.auth-form label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #52606d;
+}
+
+.auth-form input {
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #d9dde3;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.auth-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.auth-form button:disabled {
+  background-color: #93b4f0;
+  cursor: not-allowed;
+}
+
+.auth-switch {
+  margin-top: 16px;
+  font-size: 13px;
+  text-align: center;
+  color: #52606d;
+}
+
+.error-message {
+  color: #d64545;
+  font-size: 13px;
+  margin: -8px 0 16px;
+}
+
+.success-message {
+  color: #1a8a4a;
+  font-size: 13px;
+  margin: -8px 0 16px;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 64px;
+  color: #52606d;
+}
+
+/* 物件一覧画面 */
+.property-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.property-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.property-header h1 {
+  margin: 0 0 4px;
+  font-size: 24px;
+}
+
+.logged-in-as {
+  margin: 0;
+  font-size: 13px;
+  color: #52606d;
+}
+
+.property-header button {
+  padding: 10px 16px;
+  border: 1px solid #d9dde3;
+  border-radius: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.property-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.property-card h2 {
+  margin: 0 0 12px;
+  font-size: 17px;
+}
+
+.property-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #52606d;
+}
+
+.property-rent {
+  font-weight: bold;
+  color: #1f2933 !important;
+}
